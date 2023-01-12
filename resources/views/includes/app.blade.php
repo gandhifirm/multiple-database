@@ -29,11 +29,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item {{ Request::is('kta-2018') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('kta2018') }}">Data KTA 2018</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item {{ Request::is('kta-2023') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('kta2023') }}">Data KTA 2023</a>
                         </li>
                     </ul>
